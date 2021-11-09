@@ -40,33 +40,6 @@ body {
 }
 
 body:after {
-  /* preload assets */
-  content:
-    url("../img/css-room-escape-door.png")
-    url("../img/css-room-escape-door-way.png")
-    url("../img/css-room-escape-mat.png")
-    url("../img/css-room-escape-key.png")
-    url("../img/css-room-escape-front.png")
-    url("../img/css-room-escape-instructions.png")
-    url("../img/css-room-escape-map-background.png")
-    url("../img/css-room-escape-navigation.png")
-    url("../img/css-room-escape-closet.png")
-    url("../img/css-room-escape-closet-door.png")
-    url("../img/css-room-escape-stage-label.png")
-    url("../img/css-room-escape-frame.png")
-    url("../img/css-room-escape-scissors.png")
-    url("../img/css-room-escape-window.png")
-    url("../img/css-room-escape-window-curtain.png")
-    url("../img/css-room-escape-finish.png")
-    url("../img/css-room-escape-lamp.png")
-    url("../img/css-room-escape-wall-clock.png")
-    url("../img/css-room-escape-floor-vase.png")
-    url("../img/css-room-escape-flower-vase.png")
-    url("../img/css-room-escape-book-shelf.png")
-    url("../img/css-room-escape-conceal-floor.png")
-    url("../img/css-room-escape-conceal-tree.png")
-    url("../img/css-room-escape-desk.png")
-  ;
   width: 0;
   height: 0;
   position: absolute;
