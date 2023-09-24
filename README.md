@@ -1,9 +1,12 @@
 # CSS Only Room Escape Game
+
 This is an escape game only made in CSS.
 
-I created all of the assets, using MS paint to draw the image, and Paint.net to make the background color of the PNG files into transparent.
+Although the development is not pure CSS code (anymore), The runtime is still.
 
-These functions are just made my many hidden checkboxes, and radio buttons.
+I created all the assets, using MS paint to draw the image, and Paint.net to make the background color of the PNG files into transparent.
+
+These functions are just made by many hidden checkboxes, and radio buttons.
 
 Please do not look on the source code, to find the clues to go outside.
 
