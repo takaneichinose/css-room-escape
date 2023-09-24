@@ -1,0 +1,15 @@
+version: 'php:8.2-cli'
+services:
+  app:
+    image: node:20-alpine
+    container_name: css-room-escape
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - 5173:5173
+    working_dir: /src
+    volumes:
+      - type: bind
+        source: ./
+        target: /src
+    tty: true
