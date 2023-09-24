@@ -34,8 +34,8 @@ exec:
 
 restart:
 	@echo "Restarting the container..."
-	make up
 	make down
+	make up
 	@echo "Container restarted"
 
 rebuild:

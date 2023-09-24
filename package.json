@@ -6,6 +6,7 @@
   "author": "Takane Ichinose <ichinose.takane@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.18.2",
     "pug": "^3.0.2"
   }
 }
