@@ -34,356 +34,351 @@ html(lang="en")
     link(rel="stylesheet" href="./css/style.css")
   body
     .container
-      <!-- FRONT -->
+      //- FRONT
       input(type="radio" name="stage" class="stage-radio" checked)
       label(class="stage front" for="instructions")
-      <!-- INSTRUCTIONS -->
+      //- INSTRUCTIONS
       input(type="radio" name="stage" id="instructions" class="stage-radio")
       label(class="stage instructions" for="stage_1")
-      <!-- STAGE 1 -->
+      //- STAGE 1
       input(type="radio" name="stage" id="stage_1" class="stage-radio")
       form(class="stage stage-1")
-        <!-- MAP 1 -->
+        //- MAP 1
         input(type="radio" class="map-radio" id="stage_1_map_1" checked)
         div(class="map stage-1-map-1")
-          <!-- WALL CLOCK -->
+          //- WALL CLOCK
           div(class="object wall-clock" style="--object-top: 30px; --object-left: 103px;")
-          <!-- MAT -->
+          //- MAT
           div(class="object mat" style="--object-top: 170px; --object-left: 80px;")
-          <!-- CLOSED DOOR -->
+          //- CLOSED DOOR
           input(type="checkbox" id="stage_1_door" class="door-way-checkbox")
           <label class="door-way door-way-close" for="stage_1_door">
             div(class="door")
-          <!-- OPEN DOOR -->
+          //- OPEN DOOR
           <label class="door-way door-way-open" for="stage_2">
             div(class="door")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 130px; --object-left: 55px;")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 100px; --object-left: 158px;")
-        <!-- RESET -->
+        //- RESET
         input(type="reset" class="nav nav-reset" value="")
-        <!-- STAGE LABEL -->
+        //- STAGE LABEL
         div(class="stage-label stage-label-1")
-      </form>
-      <!-- STAGE 2 -->
+      //- STAGE 2
       input(type="radio" name="stage" id="stage_2" class="stage-radio")
       form(class="stage stage-2")
-        <!-- DOOR KEY -->
+        //- DOOR KEY
         input(type="checkbox" id="stage_2_map_1_key" class="key-checkbox door-key")
-        <!-- MAP 1 -->
+        //- MAP 1
         input(type="radio" class="map-radio" id="stage_2_map_1" checked)
         div(class="map stage-2-map-1")
-          <!-- DOOR KEY TRIGGER -->
+          //- DOOR KEY TRIGGER
           label(class="object key door-key-trigger" for="stage_2_map_1_key" style="--object-top: 175px; --object-left: 112px;")
-          <!-- WALL CLOCK -->
+          //- WALL CLOCK
           div(class="object wall-clock" style="--object-top: 30px; --object-left: 103px;")
-          <!-- MAT -->
+          //- MAT
           input(type="checkbox" id="stage_2_map_1_mat" class="mat-checkbox")
           label(class="object mat" for="stage_2_map_1_mat" style="--object-top: 170px; --object-left: 80px;")
-          <!-- DISABLED DOOR -->
+          //- DISABLED DOOR
           div(class="door-way")
             div(class="door")
-          <!-- CLOSED DOOR -->
+          //- CLOSED DOOR
           input(type="checkbox" id="stage_2_door" class="door-way-checkbox")
           <label class="door-way door-way-close" for="stage_2_door">
             div(class="door")
-          <!-- OPEN DOOR -->
+          //- OPEN DOOR
           <label class="door-way door-way-open" for="stage_3">
             div(class="door")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 130px; --object-left: 55px;")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 100px; --object-left: 158px;")
-        <!-- RESET -->
+        //- RESET
         input(type="reset" class="nav nav-reset" value="")
-        <!-- STAGE LABEL -->
+        //- STAGE LABEL
         div(class="stage-label stage-label-2")
-      </form>
-      <!-- STAGE 3 -->
+      //- STAGE 3
       input(type="radio" name="stage" id="stage_3" class="stage-radio")
       form(class="stage stage-3")
-        <!-- CLOSET KEY -->
+        //- CLOSET KEY
         input(type="checkbox" id="stage_3_map_1_closet_key" class="key-checkbox closet-key")
-        <!-- DOOR KEY -->
+        //- DOOR KEY
         input(type="checkbox" id="stage_3_map_2_key" class="key-checkbox door-key")
-        <!-- MAP 1 -->
+        //- MAP 1
         input(type="radio" name="stage3_radio" id="stage_3_map_1" class="map-radio" checked)
         div(class="map stage-3-map-1")
-          <!-- DISABLED WINDOW -->
+          //- DISABLED WINDOW
           div(class="window" style="--lockable-bottom: 90px; --lockable-left: 55px;")
             div(class="window-curtain window-curtain-left")
             div(class="window-curtain window-curtain-right")
-          <!-- DISABLED CLOSET -->
+          //- DISABLED CLOSET
           div(class="closet closet-locked")
             div(class="closet-door closet-door-left")
             div(class="closet-door closet-door-right")
-          <!-- CLOSED CLOSET -->
+          //- CLOSED CLOSET
           input(type="checkbox" id="stage_3_closet" class="closet-checkbox")
           <label class="closet closet-close" for="stage_3_closet">
              div(class="closet-door closet-door-left")
              div(class="closet-door closet-door-right")
-          <!-- OPEN CLOSET -->
+          //- OPEN CLOSET
           <label class="closet closet-open" for="stage_3_closet">
             div(class="closet-door closet-door-left")
             div(class="closet-door closet-door-right")
-            <!-- DOOR KEY TRIGGER -->
+            //- DOOR KEY TRIGGER
             label(class="object key door-key-trigger" for="stage_3_map_2_key" style="--object-top: 22px; --object-left: 26px;")
-          <!-- FLOWER VASE -->
+          //- FLOWER VASE
           div(class="object flower-vase" style="--object-top: 68px; --object-left: 113px;")
-          <!-- RESET -->
+          //- RESET
           input(type="reset" class="nav nav-reset" value="")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-right" for="stage_3_map_2")
-        <!-- MAP 2 -->
+        //- MAP 2
         input(type="radio" name="stage3_radio" id="stage_3_map_2" class="map-radio")
         div(class="map stage-3-map-2")
-          <!-- CLOSET KEY TRIGGER -->
+          //- CLOSET KEY TRIGGER
           label(class="object key closet-key-trigger" for="stage_3_map_1_closet_key" style="--object-top: 175px; --object-left: 112px;")
-          <!-- WALL CLOCK -->
+          //- WALL CLOCK
           div(class="object wall-clock" style="--object-top: 30px; --object-left: 103px;")
-          <!-- FRAME -->
+          //- FRAME
           div(class="object frame" for="stage_4_map_3_frame" style="--object-top: 40px; --object-left: 17px;")
-          <!-- MAT -->
+          //- MAT
           input(type="checkbox" id="stage_3_map_2_mat" class="mat-checkbox")
           label(class="object mat" for="stage_3_map_2_mat" style="--object-top: 170px; --object-left: 80px;")
-          <!-- DISABLED DOOR -->
+          //- DISABLED DOOR
           div(class="door-way")
             div(class="door")
-          <!-- CLOSED DOOR -->
+          //- CLOSED DOOR
           input(type="checkbox" id="stage_3_door" class="door-way-checkbox")
           <label class="door-way door-way-close" for="stage_3_door">
             div(class="door")
-          <!-- OPEN DOOR -->
+          //- OPEN DOOR
           <label class="door-way door-way-open" for="stage_4">
             div(class="door")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 100px; --object-left: 55px;")
-          <!-- BOOK SHELF -->
+          //- BOOK SHELF
           div(class="object book-shelf" style="--object-top: 100px; --object-left: 147px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-left" for="stage_3_map_1")
-        <!-- RESET -->
+        //- RESET
         input(type="reset" class="nav nav-reset" value="")
-        <!-- STAGE LABEL -->
+        //- STAGE LABEL
         div(class="stage-label stage-label-3")
-      </form>
-      <!-- STAGE 4 -->
+      //- STAGE 4
       input(type="radio" name="stage" id="stage_4" class="stage-radio")
       form(class="stage stage-4")
-        <!-- DOOR KEY -->
+        //- DOOR KEY
         input(type="checkbox" id="stage_4_map_2_key" class="key-checkbox door-key")
-        <!-- SCISSORS THREAD -->
+        //- SCISSORS THREAD
         input(type="checkbox" id="stage_4_map_3_window_key" class="key-checkbox window-key")
-        <!-- MAP 1 -->
+        //- MAP 1
         input(type="radio" name="stage4_radio" id="stage_4_map_1" class="map-radio")
         div(class="map stage-4-map-1")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 130px; --object-left: 55px;")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 100px; --object-left: 163px;")
-          <!-- WINDOW KEY TRIGGER -->
+          //- WINDOW KEY TRIGGER
           label(class="object scissors window-key-trigger" for="stage_4_map_3_window_key" style="--object-top: 60px; --object-left: 175px;")
-          <!-- FRAME -->
+          //- FRAME
           input(type="checkbox" id="stage_4_map_3_frame" class="frame-checkbox")
           label(class="object frame" for="stage_4_map_3_frame" style="--object-top: 40px; --object-left: 140px;")
-          <!-- DISABLED CLOSET -->
+          //- DISABLED CLOSET
           div(class="closet closet-locked")
             div(class="closet-door closet-door-left")
             div(class="closet-door closet-door-right")
-          <!-- FLOWER VASE -->
+          //- FLOWER VASE
           div(class="object flower-vase" style="--object-top: 68px; --object-left: 113px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-right" for="stage_4_map_2")
-        <!-- MAP 2 -->
+        //- MAP 2
         input(type="radio" name="stage4_radio" id="stage_4_map_2" class="map-radio" checked)
         div(class="map stage-4-map-2")
-          <!-- MAT -->
+          //- MAT
           div(class="object mat" style="--object-top: 170px; --object-left: 80px;")
-          <!-- BOOK SHELF -->
+          //- BOOK SHELF
           div(class="object book-shelf" style="--object-top: 110px; --object-left: 19px;")
-          <!-- FLOWER VASE -->
+          //- FLOWER VASE
           div(class="object flower-vase" style="--object-top: 64px; --object-left: 40px;")
-          <!-- WALL CLOCK -->
+          //- WALL CLOCK
           div(class="object wall-clock" style="--object-top: 30px; --object-left: 103px;")
-          <!-- DISABLED DOOR -->
+          //- DISABLED DOOR
           div(class="door-way")
             div(class="door")
-          <!-- CLOSED DOOR -->
+          //- CLOSED DOOR
           input(type="checkbox" id="stage_4_door" class="door-way-checkbox")
           <label class="door-way door-way-close" for="stage_4_door">
             div(class="door")
-          <!-- OPEN DOOR -->
+          //- OPEN DOOR
           <label class="door-way door-way-open" for="stage_5">
             div(class="door")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 123px; --object-left: 185px;")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 90px; --object-left: 163px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-left" for="stage_4_map_1")
           label(class="nav nav-right" for="stage_4_map_3")
-        <!-- MAP 3 -->
+        //- MAP 3
         input(type="radio" name="stage4_radio" id="stage_4_map_3" class="map-radio")
         div(class="map stage-4-map-3")
-          <!-- DISABLED WINDOW -->
+          //- DISABLED WINDOW
           div(class="window" style="--lockable-bottom: 95px; --lockable-left: 14px;")
-            <!-- DOOR KEY FAKE TRIGGER -->
+            //- DOOR KEY FAKE TRIGGER
             div(class="object key door-key-trigger" style="--object-top: 64px; --object-left: 79px;")
             div(class="window-curtain window-curtain-left")
             div(class="window-curtain window-curtain-right")
-          <!-- CLOSED WINDOW -->
+          //- CLOSED WINDOW
           input(type="checkbox" id="stage_4_map_3_window_curtain_key" class="window-checkbox")
           <label class="window window-close" for="stage_4_map_3_window_curtain_key" style="--lockable-bottom: 95px; --lockable-left: 14px;">
-            <!-- DOOR KEY FAKE TRIGGER -->
+            //- DOOR KEY FAKE TRIGGER
             div(class="object key door-key-trigger" style="--object-top: 64px; --object-left: 79px;")
             div(class="window-curtain window-curtain-left")
             div(class="window-curtain window-curtain-right")
-          <!-- OPEN WINDOW -->
+          //- OPEN WINDOW
           div(class="window window-open" style="--lockable-bottom: 95px; --lockable-left: 14px;")
-            <!-- DOOR KEY TRIGGER -->
+            //- DOOR KEY TRIGGER
             label(class="object key door-key-trigger" for="stage_4_map_2_key" style="--object-top: 64px; --object-left: 79px;")
             div(class="window-curtain window-curtain-left")
             div(class="window-curtain window-curtain-right")
-          <!-- MAT -->
+          //- MAT
           input(type="checkbox" id="stage_5_map_3_mat" class="mat-checkbox")
           label(class="object mat" for="stage_5_map_3_mat" style="--object-top: 170px; --object-left: 60px;")
-          <!-- BOOK SHELF -->
+          //- BOOK SHELF
           div(class="object book-shelf" style="--object-top: 110px; --object-left: 142px;")
-          <!-- FLOWER VASE -->
+          //- FLOWER VASE
           div(class="object flower-vase" style="--object-top: 64px; --object-left: 164px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-left" for="stage_4_map_2")
-        <!-- RESET -->
+        //- RESET
         input(type="reset" class="nav nav-reset" value="")
-        <!-- STAGE LABEL -->
+        //- STAGE LABEL
         div(class="stage-label stage-label-4")
-      </form>
-      <!-- STAGE 5 -->
+      //- STAGE 5
       input(type="radio" name="stage" id="stage_5" class="stage-radio")
       form(class="stage stage-5")
-        <!-- CLOSET KEY -->
+        //- CLOSET KEY
         input(type="checkbox" id="stage_5_map_1_closet_key" class="key-checkbox closet-key")
-        <!-- SCISSORS THREAD -->
+        //- SCISSORS THREAD
         input(type="checkbox" id="stage_5_map_2_window_key" class="key-checkbox window-key")
-        <!-- DOOR KEY -->
+        //- DOOR KEY
         input(type="checkbox" id="stage_5_fake_key" class="key-checkbox fake-key")
-        <!-- DOOR KEY -->
+        //- DOOR KEY
         input(type="checkbox" id="stage_5_map_4_key" class="key-checkbox door-key")
-        <!-- MAP 1 -->
+        //- MAP 1
         input(type="radio" name="stage5_radio" id="stage_5_map_1" class="map-radio")
         div(class="map stage-5-map-1")
-          <!-- FRAME -->
+          //- FRAME
           div(class="object frame" style="--object-top: 35px; --object-left: 168px;")
-          <!-- BOOK SHELF -->
+          //- BOOK SHELF
           div(class="object book-shelf" style="--object-top: 97px; --object-left: 170px;")
-          <!-- MAT -->
+          //- MAT
           div(class="object mat" style="--object-top: 175px; --object-left: 157px;")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 127px; --object-left: 53px;")
-          <!-- DISABLED CLOSET -->
+          //- DISABLED CLOSET
           div(class="closet closet-locked")
             div(class="closet-door closet-door-left")
             div(class="closet-door closet-door-right")
-          <!-- CLOSED CLOSET -->
+          //- CLOSED CLOSET
           input(type="checkbox" id="stage_5_closet" class="closet-checkbox")
           <label class="closet closet-close" for="stage_5_closet">
              div(class="closet-door closet-door-left")
              div(class="closet-door closet-door-right")
-          <!-- OPEN CLOSET -->
+          //- OPEN CLOSET
           <label class="closet closet-open" for="stage_5_closet">
             div(class="closet-door closet-door-left")
             div(class="closet-door closet-door-right")
-            <!-- DOOR KEY TRIGGER -->
+            //- DOOR KEY TRIGGER
             label(class="object key fake-key-trigger" for="stage_5_fake_key" style="--object-top: 22px; --object-left: 26px;")
-          <!-- FLOWER VASE -->
+          //- FLOWER VASE
           div(class="object flower-vase" style="--object-top: 68px; --object-left: 114px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-right" for="stage_5_map_2")
-        <!-- MAP 2 -->
+        //- MAP 2
         input(type="radio" name="stage5_radio" id="stage_5_map_2" class="map-radio" checked)
         div(class="map stage-5-map-2")
-          <!-- DISABLED WINDOW -->
+          //- DISABLED WINDOW
           div(class="window" style="--lockable-bottom: 95px; --lockable-left: 35px;")
-            <!-- DOOR KEY FAKE TRIGGER -->
+            //- DOOR KEY FAKE TRIGGER
             div(class="object key door-key-trigger" style="--object-top: 64px; --object-left: 79px;")
             div(class="window-curtain window-curtain-left")
             div(class="window-curtain window-curtain-right")
-          <!-- CLOSED WINDOW -->
+          //- CLOSED WINDOW
           input(type="checkbox" id="stage_5_map_2_window_curtain_key" class="window-checkbox")
           <label class="window window-close" for="stage_5_map_2_window_curtain_key" style="--lockable-bottom: 95px; --lockable-left: 35px;">
-            <!-- DOOR KEY FAKE TRIGGER -->
+            //- DOOR KEY FAKE TRIGGER
             div(class="object key door-key-trigger" style="--object-top: 64px; --object-left: 79px;")
             div(class="window-curtain window-curtain-left")
             div(class="window-curtain window-curtain-right")
-          <!-- OPEN WINDOW -->
+          //- OPEN WINDOW
           div(class="window window-open" style="--lockable-bottom: 95px; --lockable-left: 35px;")
-            <!-- CLOSET TRIGGER -->
+            //- CLOSET TRIGGER
             label(class="object key closet-key-trigger" for="stage_5_map_1_closet_key" style="--object-top: 64px; --object-left: 79px;")
-            <!-- DOOR KEY TRIGGER -->
+            //- DOOR KEY TRIGGER
             label(class="object key door-key-trigger" for="stage_5_map_4_key" style="--object-top: 80px; --object-left: 50px;")
-            <!-- CONCEAL FLOOR -->
+            //- CONCEAL FLOOR
             input(type="checkbox" id="stage_5_map_2_conceal_tree" class="conceal-tree-checkbox")
             label(class="object conceal-tree" for="stage_5_map_2_conceal_tree" style="--object-top: 80px; --object-left: 50px;")
             div(class="window-curtain window-curtain-left")
             div(class="window-curtain window-curtain-right")
-          <!-- MAT -->
+          //- MAT
           div(class="object mat" style="--object-top: 166px; --object-left: 82px;")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 81px; --object-left: 170px;")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 134px; --object-left: 77px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-left" for="stage_5_map_1")
           label(class="nav nav-right" for="stage_5_map_3")
-        <!-- MAP 3 -->
+        //- MAP 3
         input(type="radio" name="stage5_radio" id="stage_5_map_3" class="map-radio")
         div(class="map stage-5-map-3")
-          <!-- BOOK SHELF -->
+          //- BOOK SHELF
           div(class="object book-shelf" style="--object-top: 97px; --object-left: 20px;")
-          <!-- DESK -->
+          //- DESK
           div(class="object desk" style="--object-top: 115px; --object-left: 121px;")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 81px; --object-left: 79px;")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 134px; --object-left: 93px;")
-          <!-- WALL CLOCK -->
+          //- WALL CLOCK
           div(class="object wall-clock" style="--object-top: 30px; --object-left: 103px;")
-          <!-- WINDOW KEY TRIGGER -->
+          //- WINDOW KEY TRIGGER
           label(class="object scissors window-key-trigger" for="stage_5_map_2_window_key" style="--object-top: 190px; --object-left: 30px;")
-          <!-- CONCEAL FLOOR -->
+          //- CONCEAL FLOOR
           input(type="checkbox" id="stage_5_map_3_conceal_floor" class="conceal-floor-checkbox")
           label(class="object conceal-floor" for="stage_5_map_3_conceal_floor" style="--object-top: 190px; --object-left: 30px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-left" for="stage_5_map_2")
           label(class="nav nav-right" for="stage_5_map_4")
-        <!-- MAP 4 -->
+        //- MAP 4
         input(type="radio" name="stage5_radio" id="stage_5_map_4" class="map-radio")
         div(class="map stage-5-map-4")
-          <!-- WALL CLOCK -->
+          //- WALL CLOCK
           div(class="object wall-clock" style="--object-top: 30px; --object-left: 103px;")
-          <!-- MAT -->
+          //- MAT
           div(class="object mat" style="--object-top: 170px; --object-left: 80px;")
-          <!-- DISABLED DOOR -->
+          //- DISABLED DOOR
           div(class="door-way")
             div(class="door")
-          <!-- CLOSED DOOR -->
+          //- CLOSED DOOR
           input(type="checkbox" id="stage_5_door" class="door-way-checkbox")
           <label class="door-way door-way-close" for="stage_5_door">
             div(class="door")
-          <!-- OPEN DOOR -->
+          //- OPEN DOOR
           <label class="door-way door-way-open" for="finish">
             div(class="door")
-          <!-- FLOOR VASE -->
+          //- FLOOR VASE
           div(class="object floor-vase" style="--object-top: 130px; --object-left: 55px;")
-          <!-- LAMP -->
+          //- LAMP
           div(class="object lamp" style="--object-top: 100px; --object-left: 158px;")
-          <!-- NAVIGATION -->
+          //- NAVIGATION
           label(class="nav nav-left" for="stage_5_map_3")
-        <!-- RESET -->
+        //- RESET
         input(type="reset" class="nav nav-reset" value="")
-        <!-- STAGE LABEL -->
+        //- STAGE LABEL
         div(class="stage-label stage-label-5")
-      </form>
       input(type="radio" name="stage" id="finish" class="stage-radio")
       div(class="stage finish" type="reset" value="")
