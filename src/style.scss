@@ -1,31 +1,8 @@
+@use "./sass/assets" as assets;
+
 :root {
   --width: 240px;
   --height: 240px;
-  --door-background-image: url("../img/css-room-escape-door.png");
-  --door-way-background-image: url("../img/css-room-escape-door-way.png");
-  --mat-background-image: url("../img/css-room-escape-mat.png");
-  --key-background-image: url("../img/css-room-escape-key.png");
-  --front-background-image: url("../img/css-room-escape-front.png");
-  --instructions-background-image: url("../img/css-room-escape-instructions.png");
-  --map-background-image: url("../img/css-room-escape-map-background.png");
-  --navigation-background-image: url("../img/css-room-escape-navigation.png");
-  --closet-background-image: url("../img/css-room-escape-closet.png");
-  --closet-door-background-image: url("../img/css-room-escape-closet-door.png");
-  --stage-label-background-image: url("../img/css-room-escape-stage-label.png");
-  --frame-background-image: url("../img/css-room-escape-frame.png");
-  --scissors-background-image: url("../img/css-room-escape-scissors.png");
-  --window-background-image: url("../img/css-room-escape-window.png");
-  --window-curtain-background-image: url("../img/css-room-escape-window-curtain.png");
-  --finish-background-image: url("../img/css-room-escape-finish.png");
-  --lamp-background-image: url("../img/css-room-escape-lamp.png");
-  --wall-clock-background-image: url("../img/css-room-escape-wall-clock.png");
-  --floor-vase-background-image: url("../img/css-room-escape-floor-vase.png");
-  --flower-vase-background-image: url("../img/css-room-escape-flower-vase.png");
-  --flower-vase-background-image: url("../img/css-room-escape-flower-vase.png");
-  --book-shelf-background-image: url("../img/css-room-escape-book-shelf.png");
-  --conceal-floor-background-image: url("../img/css-room-escape-conceal-floor.png");
-  --conceal-tree-background-image: url("../img/css-room-escape-conceal-tree.png");
-  --desk-background-image: url("../img/css-room-escape-desk.png");
 }
 
 body {
@@ -71,7 +48,7 @@ body:after {
 }
 
 .map {
-  background-image: var(--map-background-image);
+  background-image: #{assets.$map};
   width: var(--width);
   height: var(--height);
   display: none;
@@ -98,7 +75,7 @@ label.object:hover {
 .stage-label {
   --stage-label-width: 62px;
   --stage-label-height: 15px;
-  background-image: var(--stage-label-background-image);
+  background-image: #{assets.$stage-label};
   width: var(--stage-label-width);
   height: var(--stage-label-height);
   position: absolute;
@@ -113,7 +90,7 @@ label.object:hover {
 .door {
   --door-width: 42px;
   --door-height: 76px;
-  background-image: var(--door-background-image);
+  background-image: #{assets.$door};
   width: var(--door-width);
   height: var(--door-height);
   position: absolute;
@@ -124,7 +101,7 @@ label.object:hover {
 .closet-door {
   --door-width: 30px;
   --door-height: 49px;
-  background-image: var(--closet-door-background-image);
+  background-image: #{assets.$closet-door};
   width: var(--door-width);
   height: var(--door-height);
   position: absolute;
@@ -143,7 +120,7 @@ label.object:hover {
 .window-curtain {
   --door-width: 77px;
   --door-height: 130px;
-  background-image: var(--window-curtain-background-image);
+  background-image: #{assets.$window-curtain};
   width: var(--door-width);
   height: var(--door-height);
   position: absolute;
@@ -172,7 +149,7 @@ label.object:hover {
 }
 
 .door-way {
-  --lockable-background-image: var(--door-way-background-image);
+  --lockable-background-image: #{assets.$door-way};
   --lockable-width: 50px;
   --lockable-height: 80px;
   --lockable-bottom: 80px;
@@ -180,7 +157,7 @@ label.object:hover {
 }
 
 .closet {
-  --lockable-background-image: var(--closet-background-image);
+  --lockable-background-image: #{assets.$closet};
   --lockable-width: 63px;
   --lockable-height: 68px;
   --lockable-bottom: 60px;
@@ -188,7 +165,7 @@ label.object:hover {
 }
 
 .window {
-  --lockable-background-image: var(--window-background-image);
+  --lockable-background-image: #{assets.$window};
   --lockable-width: 170px;
   --lockable-height: 130px;
 }
@@ -299,7 +276,7 @@ label.window:hover {
 }
 
 .mat {
-  --object-background-image: var(--mat-background-image);
+  --object-background-image: #{assets.$mat};
   --object-width: 80px;
   --object-height: 40px;
   --object-move-left: 0px;
@@ -319,7 +296,7 @@ label.window:hover {
 }
 
 .key {
-  --object-background-image: var(--key-background-image);
+  --object-background-image: #{assets.$key};
   --object-width: 12px;
   --object-height: 32px;
   --object-move-left: 0px;
@@ -327,7 +304,7 @@ label.window:hover {
 }
 
 .scissors {
-  --object-background-image: var(--scissors-background-image);
+  --object-background-image: #{assets.$scissors};
   --object-width: 21px;
   --object-height: 30px;
   --object-move-left: 0px;
@@ -350,7 +327,7 @@ label.window:hover {
 }
 
 .frame {
-  --object-background-image: var(--frame-background-image);
+  --object-background-image: #{assets.$frame};
   --object-width: 60px;
   --object-height: 55px;
   --object-move-left: 0px;
@@ -367,7 +344,7 @@ label.window:hover {
 /****************/
 
 .lamp {
-  --object-background-image: var(--lamp-background-image);
+  --object-background-image: #{assets.$lamp};
   --object-width: 31px;
   --object-height: 90px;
   --object-move-left: 0px;
@@ -378,7 +355,7 @@ label.window:hover {
 /**********************/
 
 .wall-clock {
-  --object-background-image: var(--wall-clock-background-image);
+  --object-background-image: #{assets.$wall-clock};
   --object-width: 35px;
   --object-height: 35px;
   --object-move-left: 0px;
@@ -389,7 +366,7 @@ label.window:hover {
 /**********************/
 
 .floor-vase {
-  --object-background-image: var(--floor-vase-background-image);
+  --object-background-image: #{assets.$floor-vase};
   --object-width: 24px;
   --object-height: 50px;
   --object-move-left: 0px;
@@ -400,7 +377,7 @@ label.window:hover {
 /***********************/
 
 .flower-vase {
-  --object-background-image: var(--flower-vase-background-image);
+  --object-background-image: #{assets.$flower-vase};
   --object-width: 12px;
   --object-height: 50px;
   --object-move-left: 0px;
@@ -411,7 +388,7 @@ label.window:hover {
 /***********************/
 
 .book-shelf {
-  --object-background-image: var(--book-shelf-background-image);
+  --object-background-image: #{assets.$book-shelf};
   --object-width: 55px;
   --object-height: 75px;
   --object-move-left: 0px;
@@ -422,7 +399,7 @@ label.window:hover {
 /*************************/
 
 .conceal-floor {
-  --object-background-image: var(--conceal-floor-background-image);
+  --object-background-image: #{assets.$conceal-floor};
   --object-width: 21px;
   --object-height: 30px;
   --object-move-left: 0px;
@@ -442,7 +419,7 @@ label.window:hover {
 /************************/
 
 .conceal-tree {
-  --object-background-image: var(--conceal-tree-background-image);
+  --object-background-image: #{assets.$conceal-tree};
   --object-width: 12px;
   --object-height: 32px;
   --object-move-left: 0px;
@@ -462,7 +439,7 @@ label.window:hover {
 /****************/
 
 .desk {
-  --object-background-image: var(--desk-background-image);
+  --object-background-image: #{assets.$desk};
   --object-width: 71px;
   --object-height: 67px;
   --object-move-left: 0px;
@@ -475,7 +452,7 @@ label.window:hover {
   --navigation-width: 29px;
   --navigation-height: 29px;
   --navigation-spacing: 5px;
-  background-image: var(--navigation-background-image);
+  background-image: #{assets.$navigation};
   width: var(--navigation-width);
   height: var(--navigation-height);
   position: absolute;
@@ -513,15 +490,15 @@ label.window:hover {
 /***********************/
 
 .front {
-  background-image: var(--front-background-image);
+  background-image: #{assets.$front};
 }
 
 .instructions {
-  background-image: var(--instructions-background-image);
+  background-image: #{assets.$instructions};
 }
 
 .finish {
-  background-image: var(--finish-background-image);
+  background-image: #{assets.$finish};
 }
 
 /* STAGE 1 */
