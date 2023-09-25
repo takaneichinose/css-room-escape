@@ -1,12 +1,15 @@
 {
   "name": "css-room-escape",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.1.0",
   "repository": "https://github.com/takaneichinose/profile.git",
   "author": "Takane Ichinose <ichinose.takane@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "sass": "^1.68.0"
   }
 }
